@@ -21,7 +21,8 @@ describe("Login and logout tests", () => {
     cy.get('input[type="password"]').type(user1.password);
     cy.get(".eckniwg2").click();
 
-    cy.get("#open-navigation-menu-mobile").should("be.visible").click(); //kliknięcie na rozwijane menu w prawym górnym rogu; dodałam asercję .should("be.visible")
+    cy.get("#open-navigation-menu-mobile").should("be.visible").click();
+    //kliknięcie na rozwijane menu w prawym górnym rogu; dodałam asercję .should("be.visible")
     cy.get(":nth-child(8) > .next-bve2vl").should("be.visible").click(); //kliknięcie przycisku wylogowania z should, gdyby pojawił się ten przycisk z opoźnieniem
   });
 
